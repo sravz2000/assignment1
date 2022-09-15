@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>   
+        *{
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .header{
+            padding:3px;
+            background-color: rgb(232, 202, 147);
+        }
+        
+        h4{
+            font-size: large;
+        }
+
+        fieldset{
+            width: max-content;
+        }
+        h4,p,label{
+            padding:0px 15px 0px 15px;
+        }
+        #Order{
+            color:white;
+            border: 1px solid white;
+            background-color: rgb(126, 50, 0);
+            width:513px;
+            padding:10px;
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="Login.asp" method="post">
+
+    <fieldset>
+        
+    <div class="header">
+    <h4>WELCOME TO THE ITALIAN PIZZA!</h4>
+    <P>We deliver pizza in 40 minutes max. If not-Pizza's on us!</P>
+    </div>
+    
+    <label>Email</label><br/>
+    <input type="Email" id="Email" name="Email"/>
+    <br/><br/>
+
+    <label>Phone</label><br/>
+    <input type="text" id="Area" name="Area" placehoder="Area"/>
+    <input type="text" id="Local" name="Local" placehoder="Local"/>
+    <input type="text" id="Local" name="Local" placehoder="Local"/>
+    <br/><br/>
+
+    <label>Number of slices</label><br/>
+    <input type="number" id="slices" name="slices"/>
+    <br/><br/>
+
+    <label>Pizza Size</label><br/>
+    <input type="radio" id="8" name="pizza size" />
+    <label for="8">8-inch</label>
+    <input type="radio" id="10" name="pizza size"/>
+    <label for="10">10-inch</label>
+    <input type="radio" id="12" name="pizza size"/>
+    <label for="12">12-inch</label>
+    <input type="radio" id="14" name="pizza size"/>
+    <label for="14">14-inch</label>
+    <br/><br/>
+
+    <label>Toppings</label><br/>
+    <input type="checkbox" id="Pepperoni" name="Pepperoni" />
+    <label>Pepperoni</label>
+    <input type="checkbox" id="Onions" name="Onions"/>
+    <label>Onions</label>
+    <input type="checkbox" id="Mushrooms" name="Mushrooms"/>
+    <label>Mushrooms</label>
+    <input type="checkbox" id="Sausage" name="Sausage"/>
+    <label>Sausage</label>
+    <br/><br/>
+
+    <label style="color:red">*</label>
+    <input type="checkbox" id="Agree" name="Agree" value="Agree" required/>
+    <label>I agree to the TERMS AND CONDITIONS</label>
+
+    </fieldset>
+    <br/>
+
+    <input type="submit" id="Order" name="Order" value="Order Now"/>
+
+    </form>
+</body>
+</html>
