@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username</title>
+</head>
+<body>
+    <form>
+        <label>User Name : </label>
+        <input type="text" id="name" name="name"/>
+        <input type="button" value="Get Message" onclick="fn_GetMessage()"/>
+
+        
+
+    </form>
+
+    <p id="s1"></p>
+    <script>
+        function fn_GetMessage(){
+        var textObj = document.getElementById("name");
+        var paraObj = document.getElementById("s1");
+        paraObj.innerText="Welcome to " + textObj.value;
+        }
+    </script>
+</body>
+</html>
