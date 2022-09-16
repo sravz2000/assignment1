@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+</head>
+<body>
+    Select Fav Colour : 
+    <select id="t1">
+        <option value="Red">Red</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+        <option value="Indigo">Indigo</option>
+        <option value="Violet">Violet</option>
+    </select>
+    <br/><br/>
+
+
+    <input type="button" onclick="f1()"   value="Set Item" />
+	<input type="button" onclick="f2()"   value="Get Item" />
+	<input type="button" onclick="f3()"   value="Remove Item" />
+	<br></br>
+	<hr/>
+    <a href="favcolor2.html">Next Page</a>
+    
+
+    <script>	
+		function f1()
+		{
+			var obj = document.getElementById("t1");
+			localStorage.setItem("uid",  obj.value);
+			alert("User Id stored in webstorage.");
+		}	
+		
+		function f2()
+		{	
+			var str  =  localStorage.getItem("uid");
+			alert("User Id  : " + str);
+		}
+		
+		function f3()
+		{	
+			localStorage.removeItem("uid");
+			alert("User Id removed from webstorage.");
+		}		
+	</script>
+    
+
+</body>
+</html>

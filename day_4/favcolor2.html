@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head> </head>
+<body>
+	
+	
+<input type="button"  onclick="f2()"  value="Get Item" />
+	<h1 id="x"></h1>
+	<hr/>
+	<a href="favcolor.html">Prev. Page</a>	
+	<script>
+		function f2()
+		{	
+			var str  =localStorage.getItem("uid");
+			
+            document.body.style.background=str;	
+			
+		}
+	</script>	 
+</body>
+</html>
