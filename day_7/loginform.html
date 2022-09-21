@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="bootstrap.min.css"  rel="stylesheet" /> 
+    <style>
+        label{
+            font-weight: bold;
+        }
+        input{
+            
+            width:200px;
+        }
+        #Area{
+            width:40px;
+        }
+        #Local{
+            width: 160px;
+        }
+        #Login,#Reset{
+            width:100px;
+        }
+        form{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>User Name:</label><br/>
+        <input type="name"  id="name" name="name"/>
+        <br/><br/>
+
+        <label>Email</label><br/>
+        <input type="Email" id="Email" name="Email"/>
+        <br/><br/>
+
+        <label>Phone</label><br/>
+        <input type="text" id="Area" name="Area" placehoder="Area"/>
+        <input type="text" id="Local" name="Local" placehoder="Local"/>
+        
+        <br/><br/>
+
+        <label>Password</label><br/>
+        <input type="password" id="password" name="password"/>
+        <br/><br/>
+
+        <input type="submit" id="Login" class="btn btn-primary" name="Login" value="Login"/>
+        <input type="reset" id="Reset" class="btn btn-danger" name="Reset" value="Reset"/>
+    </form>
+</body>
+</html>
