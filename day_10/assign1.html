@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>User Preferences</legend>
+        
+        Customer Id  :  <input type="text"  id="name"  name="name"  />
+        <br/><br/>
+        
+        Join Date  :  <input type="date"  id="date"  name="date"  />
+        <br/><br/>
+        
+        Favourite Color :  <input type="color"  id="color"  name="color"  />
+        <br/><br/>
+        
+        <input type="button"  value="Save User Data"   onclick="fn_saveData()" />
+        <input type="button"  value="Delete User Data"  onclick="fn_deleteData()" />
+        <br/>
+        <br/>
+      <a href="assign2.html">Next Page</a>
+    </fieldset>
+    
+    <br/><br/>
+    
+    </form>
+   
+    
+    <script>
+            
+        function  fn_saveData()
+            {
+                     // 1.  Get data from input fields
+                     var  txtNameObj =  document.getElementById("name");
+                     var  txtDateObj =  document.getElementById("date");
+                     var  txtColorObj =  document.getElementById("color");
+                                              
+                     // 2.  Create object with input fields values
+                     var  custObj =  {};
+                     custObj.name =  txtNameObj.value;
+                     custObj.date =  txtDateObj.value;
+                     custObj.color =  txtColorObj.value;
+                     console.log(custObj);
+                     
+                     // 3. Convert the object into JSON string
+                     var  str  =  JSON.stringify( custObj );
+                     console.log(str);
+                     
+                     // 4.  Store the string in localStorage	
+                     localStorage.setItem("userData",  str);
+
+                    alert("User details are stored in localStorage");
+            }
+        function   fn_deleteData()
+            {
+                    // delete an item from localStorage
+                    localStorage.removeItem("userData");
+                    alert("User details are removed from localStorage");
+            }
+    </script>
+</body>
+</html>
