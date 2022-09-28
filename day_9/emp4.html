@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="button"   value="Get User Data"   onclick="fn_convertJSONToObj()"   />  
+    
+    <p id="t1"></p>
+    <img id="t2"/>
+    <script>
+    
+
+        function  fn_convertJSONToObj()
+        {
+        var  str =  '{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+        console.log(str);
+
+        
+        
+        var obj =  JSON.parse(str);
+        
+        
+        var paraObj = document.getElementById("t1");
+        var imgObj = document.getElementById("t2");
+        
+        paraObj.innerText="User ID : "+obj.id+"\n"+"Email : "+obj.email+"\n"+"First Name : "+obj.first_name+"\n"+"Last Name : "+obj.last_name+"\n"+"Avatar : ";
+        imgObj.src=obj.avatar;
+        }
+
+
+        
+    </script>
+    
+        
+   
+</body>
+</html>

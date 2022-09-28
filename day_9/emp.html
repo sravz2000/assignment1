@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button"   value="Stringify"   onclick="fn_convertObjToJSON()"   />  
+	<input type="button"   value="Parsing"   onclick="fn_convertJSONToObj()"   />  
+		
+    <script>
+        function  fn_convertObjToJSON()
+        {
+                
+                
+                var  obj  =  {empno :  764970,  ename  : "Sravanthi", job : "Analyst", salary: 50000, deptno: 1};
+                console.log(obj);
+                console.log("Employee no  : "  +  obj.empno);
+                console.log("Employee name  : "   +  obj.ename);
+                console.log("Job : "  +  obj.job);	
+                console.log("Salary  : "   +  obj.salary);
+                console.log("Department no : "  +  obj.deptno);				
+                
+                
+                
+                var  str  =  JSON.stringify(obj);
+                console.log("JSON String  : " +  str);	
+        }		
+        
+        function  fn_convertJSONToObj()
+        {
+                var  str =  '{"empno":764970,  "ename":"Sravanthi",  "job" :  "Analyst", "salary": 50000, "deptno": 1}';
+                console.log(str)
+                
+                var obj =  JSON.parse(str);
+                console.log(obj);
+                console.log("Employee no  : "  +  obj.empno);
+                console.log("Employee name  : "   +  obj.ename);
+                console.log("Job : "  +  obj.job);	
+                console.log("Salary  : "   +  obj.salary);
+                console.log("Department no : "  +  obj.deptno);					
+                
+        }
+
+
+                
+    </script>
+	 
+</body>
+</html>

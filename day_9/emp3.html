@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <br/>
+            Empno: <input type="number"  id="empno" name="empno"/><br/><br/>
+            Ename: <input type="name"  id="ename" name="ename"/><br/><br/>
+            Job: <input type="name"  id="job" name="job"/><br/><br/>
+            Salary: <input type="number"  id="salary" name="salary"/><br/><br/>
+            Deptno: <input type="number"  id="deptno" name="deptno"/><br/><br/>
+
+            <input type="button"   value="Convert to JSON"   onclick="fn_convertObjToJSON()"/>   
+            
+            
+            <p id="t1"></p>
+            <script>
+                function  fn_convertObjToJSON()
+                {
+                        
+                        
+                        var  obj1 = document.getElementById("empno");
+                        var  obj2 = document.getElementById("ename");
+                        var  obj3 = document.getElementById("job");
+                        var  obj4 = document.getElementById("salary");
+                        var  obj5 = document.getElementById("deptno");
+                        var obj={empno :parseInt(obj1.value) ,  ename  :obj2.value , job :obj3.value , salary :parseInt(obj4.value), deptno :parseInt(obj5.value)};
+
+                        
+
+
+                        console.log(obj);
+                        console.log("Employee no  : "  +  obj.empno);
+                        console.log("Employee name  : "   +  obj.ename);
+                        console.log("Job : "  +  obj.job);	
+                        console.log("Salary  : "   +  obj.salary);
+                        console.log("Department no : "  +  obj.deptno);				
+                        
+                        
+                        
+                        var  str  =  JSON.stringify(obj);
+                        console.log("JSON String  : " + (str));
+                    
+                        var paraObj = document.getElementById("t1");
+                        paraObj.innerText=str;
+
+
+                        
+                }	
+            </script>	
+                
+        </fieldset>
+    </form>
+</body>
+</html>
