@@ -1,0 +1,45 @@
+@mixin theme($btnColor:blue, $Shape:rectangle) {
+    color:aliceblue;
+    margin: 10px;
+     @if($Shape==square){
+         width:70px;
+         height: 70px;
+         border-radius: 5px;
+         background-color: $btnColor;
+     }
+     @if($Shape==circle){
+         border-radius: 100%;
+         width:70px;
+         height:70px;
+         background-color: $btnColor;
+     }
+     @if($Shape==rectangle){
+         border-radius: 5px;
+         background-color: $btnColor;
+         width: 150px;
+         height: 70px;
+     }
+ }
+ .box{
+     border:2px solid gray;
+     text-align: center;
+ }
+ button {
+     border: none;
+     color: white;
+     text-align: center;
+     margin: 4px 2px;
+     cursor: pointer;
+   }
+  .btn1{
+     @include theme;
+  }
+  .btn2{
+     @include theme($btnColor:red, $Shape:square)
+  }
+  .btn3{
+     @include theme($btnColor:green, $Shape:circle)
+  }
+  .btn4{
+     @include theme($btnColor: darkblue, $Shape:square)
+  }

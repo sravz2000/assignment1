@@ -1,0 +1,48 @@
+.box {
+  border: 2px solid gray;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn1 {
+  color: aliceblue;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  width: 150px;
+  height: 70px;
+}
+
+.btn2 {
+  color: aliceblue;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.btn3 {
+  color: aliceblue;
+  margin: 10px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background-color: green;
+}
+
+.btn4 {
+  color: aliceblue;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: darkblue;
+}/*# sourceMappingURL=style2.css.map */

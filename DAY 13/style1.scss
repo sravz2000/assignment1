@@ -1,0 +1,22 @@
+$baseSize:2.5px;
+.box{
+    border:2px solid gray;
+    text-align: center;
+}
+
+@for $i from 1 to 7
+{
+    .ts-#{$i}
+    {
+        font-size :  $baseSize * $i * 5;
+
+        @if( $i <= 3)
+        {
+            color: red;
+        }
+        @else
+        {
+            color: green;
+        }
+    }
+}
