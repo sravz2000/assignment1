@@ -1,0 +1,94 @@
+ #img{
+    background-image: url("Images/bg1.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-color: lightsalmon;
+ }
+ 
+ #head1{
+    color: rgb(85, 6, 6); 
+}
+#navbar p{
+float: left;
+color: rgb(85, 6, 6);
+}
+#navbar ul{
+float: right;
+padding-top: 2px;
+}
+#navbar ul li
+{
+    list-style : none;
+    float: left;
+    margin: 15px;
+    padding-top:0px;
+    border-left:1px solid white;		
+    text-align: right;          
+}
+#navbar a{
+        text-decoration: none;
+        font-size:20px;
+        color: rgb(85, 6, 6);
+    }
+#navbar a:hover{
+        
+        color: rgb(232, 134, 64);
+    }
+.box img{
+        
+        height: 500px;
+    }
+.d1,.d2,.d3,.d4{
+    
+    padding-top:15px;
+    padding-left: 10px;
+    padding-right: 5px;
+    
+    
+}
+.d1{
+    background-color: rgb(72, 20, 20);
+}
+.d2{
+    background-color: chocolate;
+}
+.d3{
+    background-color: olivedrab;
+}
+.d4{
+    background-color: tan;
+}
+.d0 p{
+    color:lightyellow;
+}
+.d0 h4{
+    color:white;
+}
+.d5 h5{
+    color: rgb(85, 6, 6);
+}
+#b1{
+    background-color: rgb(85, 6, 6);
+}
+#b1:hover{
+    background-color: rgb(232, 134, 64);
+}
+.footer ul{
+    list-style: none;
+}
+.c1{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(85, 6, 6);
+}
+.footer a{
+    text-decoration: none;
+    color:grey;
+}
+@media only screen and (min-width: 300px){
+    body{
+        background-color: lightpink;
+    }
+}

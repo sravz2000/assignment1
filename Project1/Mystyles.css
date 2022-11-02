@@ -1,0 +1,132 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+.req{
+    color: red;
+}
+#navbar p{
+    float: left;
+    color: rgb(85, 6, 6);
+    }
+    #navbar ul{
+    float: right;
+    padding-top: 2px;
+    }
+    #navbar ul li
+    {
+        list-style : none;
+        float: left;
+        margin: 15px;
+        padding-top:0px;
+        border-left:1px solid white;		
+        text-align: right;          
+    }
+    #navbar a{
+            text-decoration: none;
+            font-size:20px;
+            color: rgb(85, 6, 6);
+        }
+    #navbar a:hover{
+            
+            color: rgb(232, 134, 64);
+        }
+    
+
+#showcase{
+    background: url("images/1.jpg") no-repeat center center/cover;
+    height: 700px;
+} 
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px 0px; 
+}
+label{
+    color: rgb(85,6,6);
+}
+
+
+h2{
+    text-align: center;
+    padding: 3px;
+    color: rgb(85,6,6);
+    padding:30px 0px 20px 0px;
+    background-color: wheat;
+    margin-bottom: 0px;
+}
+h3{
+    margin: 8px;
+    padding:10px;
+    color: rgb(85,6,6);
+    background-color: wheat;
+    text-align: center;
+}
+h4{
+    color: rgb(85,6,6);
+}
+
+
+#showcase .showcase-content{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    
+}
+.lead{
+    padding: 20px 200px;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.msg{
+    text-align: justify;
+    margin: 0px 15px;
+}
+.msg1{
+    
+    padding: 5px;
+}
+
+
+#image1{
+    background-image: url("images/2.png");
+    height: 548px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+#accordion{
+    opacity: 0.95;
+    margin-right: 10px;
+
+}
+.s2{
+    border: 1.5em px solid black;
+    border-radius: 5px;
+    margin: 30px 10px 10px 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+
+.mapouter{
+    margin: 5px;
+}
+header p{
+    padding-right: 0px;
+    float: left;
+    font-size: xx-large;
+    color: rgb(85,6,6);
+    font-weight: bold;
+    padding-top: 6px;
+}

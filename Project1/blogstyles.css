@@ -1,0 +1,142 @@
+
+#sheading{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(85,6,6);
+}
+#img{
+    background-image: url("bg1.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-color: lightsalmon;
+ }
+ #navbar p{
+    float: left;
+    color: rgb(85, 6, 6);
+    }
+    #navbar ul{
+    float: right;
+    padding-top: 2px;
+    }
+    #navbar ul li
+    {
+        list-style : none;
+        float: left;
+        margin: 15px;
+        padding-top:0px;
+        border-left:1px solid white;		
+        text-align: right;          
+    }
+    #navbar a{
+            text-decoration: none;
+            font-size:20px;
+            color: rgb(85, 6, 6);
+        }
+    #navbar a:hover{
+            
+            color: rgb(232, 134, 64);
+        }
+    
+
+.ssec1{
+    margin: 10px;
+}
+
+.snewest{
+    text-align: center;
+}
+
+#sdish1{
+    font-family:'Courier New', Courier, monospace;
+    color:  rgb(85,6,6);
+}
+
+#apppie{
+    width: 700px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#st1{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(85,6,6);
+}
+
+#ssidehead{
+    text-align: center;
+    color: rgb(85,6,6);
+}
+
+#stab1{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+tr{
+    margin-top: 15px;
+}
+
+#stips{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(85, 6, 6);
+    border-radius: 15px;
+}
+
+.ssec2{
+    margin: 10px;
+}
+
+.spoplr{
+    border: 2px solid black;
+
+}
+
+#srshead{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(85,6,6);
+}
+
+#srimg{
+    height: 250px;
+    border-radius: 50%;
+}
+
+#srimg:hover{
+    opacity: 0.6;
+    background-color: rgb(246, 158, 163);
+    box-shadow: 5px 5px 3px rgb(85, 6, 6);
+}
+
+#srtitle{
+    padding: 10px;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+}
+
+#srtitle:hover{
+    color: rgb(85,6,6);
+    background-color: bisque;
+    border-radius: 25px;
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(85,6,6);
+    margin: 2px;
+    color: white;
+}
+header p{
+    padding-right: 0px;
+    float: left;
+    font-size: xx-large;
+    color: rgb(85,6,6);
+    font-weight: bold;
+    padding-top: 10px;
+}
